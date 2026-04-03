@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Développeur PHP/React</title>
+    <title>Portfolio - Homepage</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
                 Spécialisé dans l'écosystème PHP (Symfony) et JavaScript (React). 
                 Je conçois des API robustes et des interfaces dynamiques en m'appuyant sur une logique analytique stricte.
             </p>
-            <a href="projets.html" class="btn btn-primary">Explorer mes projets</a>
+            <a href="./?p=projects" class="btn btn-primary">Explorer mes projets</a>
         </section>
     </main>
 

@@ -21,7 +21,14 @@ if(!isset($_GET['p'])){
     // chargement de view/homepage.php
     include ROOT_PATH."/view/homepage.php";
 
-// La variable $_GET['p'] existe   
+// sinon si la variable get 'p' existe et se trouve
+// dans le tableau des pages acceptées (voir config.php)
+}elseif(in_array($_GET['p'], ARRAY_VALID_PAGES)){    
+
+    // Nous chargeons la vue que nous
+    // devrons créer au péalable, ou par la suite
+    include ROOT_PATH."/view/".$_GET['p'].".php";
+ 
 }else{
     echo $_GET['p'];
 }
