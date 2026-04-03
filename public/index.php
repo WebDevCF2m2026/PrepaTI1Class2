@@ -8,6 +8,8 @@
  ****************************/
 require_once '../config.php';
 
+
+
 /*******************
  * Routage entre les
  * diverses vues
@@ -16,6 +18,9 @@ require_once '../config.php';
 // si non existence de la variable
 // $_GET nommée 'p'
 if(!isset($_GET['p'])){
+
+    // pour le menu active sur la homepage
+    $active = 'class="active"';
 
     // Nous sommes sur l'accueil
     // chargement de view/homepage.php
