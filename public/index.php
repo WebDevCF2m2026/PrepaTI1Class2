@@ -29,6 +29,9 @@ if(!isset($_GET['p'])){
     // devrons créer au péalable, ou par la suite
     include ROOT_PATH."/view/".$_GET['p'].".php";
  
+// 'p' existe mais n'est pas valide    
 }else{
-    echo $_GET['p'];
+
+    // appel de l'erreur 404
+    include ROOT_PATH."/view/error404.php";
 }
