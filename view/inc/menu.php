@@ -11,8 +11,15 @@ $homeActive = (isset($active))? $active : '';
         <?php
         // tant on a des pages à afficher
         foreach(ARRAY_VALID_PAGES as $page):
+            // pour afficher l'activation
+            // on peut vérifier si la page
+            // actuelle est celle de la boucle
+            // le isset évite le bug de la page d'accueil
+            $activeThis = (isset($_GET['p'])&& $page == $_GET['p'])
+                           ? 'class="active"'
+                           : '';
         ?>
-        <li><a href="./?p=<?= $page ?>"><?= ucfirst($page) ?></a></li>
+        <li><a href="./?p=<?= $page ?>" <?= $activeThis ?>><?= ucfirst($page) ?></a></li>
         <?php
         endforeach;
         ?>
