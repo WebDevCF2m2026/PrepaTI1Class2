@@ -33,7 +33,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 - Portfolio Développeur PHP / React. Construit en HTML/CSS/JS natif.</p>
+        <?php
+        // chemin absolu
+        # include ROOT_PATH."/view/inc/footer.php";
+        // chemin relatif (en PHP à partir de la page qui appelle)
+        include "inc/footer.php";
+
+        ?>
     </footer>
 
     <script src="js/script.js"></script>
